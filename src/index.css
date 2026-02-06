@@ -1,0 +1,31 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Light Mode Variables */
+:root {
+  --bg: #f3f4f6;   /* light gray */
+  --text: #111827; /* dark text */
+  --gradient-start: #000000;   /* black */
+  --gradient-end: #064e3b;     /* deep green */
+}
+
+/* Dark Mode Variables */
+.dark {
+  --bg: #0b1221;   /* deep navy black */
+  --text: #f1f5f9; /* soft white */
+  --gradient-start: #000000;  
+  --gradient-end: #022c22;     /* darker green */
+}
+
+/* Final Background + Text Apply */
+body {
+  background: linear-gradient(to bottom, var(--gradient-start), var(--gradient-end));
+  color: var(--text);
+}
